@@ -1,0 +1,36 @@
+Shell scripting with Bash26/6/2020)
+
+why shell script---------
+combining the multiple bashands from single file
+file manipulation
+running of other program 
+uses simple test to run the cmds
+
+I/O
+varianles 
+conditional execution(if,then,else,case)
+loops
+arithmetic
+string manipulation
+handiling script arguments
+shell functions
+
+#!/bin/bash  
+Make a folder called as "bin" and put your scripts in there 
+add the path "PATH="$PATH:~/bin"
+Shebang line:- first line of script file starts with #!
+separate which interpreter should run the code 
+Bash scripts:
+#!/bin/bash
+other system then linux or mac OS 
+May be bash in a different location 
+#!user/bin/envbash :- this will find bash on the users path(may not works)
+cant give options
+results depends on teh isers configuration
+How to check does scrpt file name is already used or not by using "type" cmds with file name 
+
+Variables:--
+Variables allow youtotemporarly store the data in memory and then retrive the date by name 
+Variables are userd to store teh data by name
+To create: just assign a value
+Ex:- X=10 , if it already prasent with another value before executing tihs it will replace it with 10
