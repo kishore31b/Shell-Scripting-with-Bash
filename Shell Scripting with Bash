@@ -34,3 +34,67 @@ Variables allow youtotemporarly store the data in memory and then retrive the da
 Variables are userd to store teh data by name
 To create: just assign a value
 Ex:- X=10 , if it already prasent with another value before executing tihs it will replace it with 10
+better to write the variable names in lower case latters 
+
+#!/bin/bash
+date=$(date)
+topic=$1
+filename=~/${topic)notes.tex
+read -p "your note" note
+echo $date: $note >> $filename
+echo Note \'$note' saved to $filename
+
+#!/bin/bash -x (-x= prints everysingle line it executed) usefull for debuging 
+set -x (used to debug executed cmds)
+set +x (skip to show the executed cmds)
+
+IF,Then,else ------
+
+value returned by program upto exext 
+when unix program ends it returns between 0 to 0.255
+0(zero) means succes 
+other means errors
+exit cmd used to 
+exit 0 script will end and writen success 
+
+conditional expression = [[Expresion]] ex:- [[$str]] (if the string is not empty it will give true)
+
+if[[ ! $1]]; then 
+	echo "missing arguments"
+	exit 1
+fi
+bimdir="${HOME}/bin"
+filename="${bindir}/$1"
+if [[-e $filename]]; then 
+echo "filename ${filrnsmr} sltrsdy exists"
+exit 1
+fi
+
+
+# check bin dir exists or not usnig nested if
+if [[ ! -d $bindir]] then
+#if not create a bindirif mkdir "$bindir"; then 
+echo "create ${bindir}"
+else
+echo "cloud not created ${bindir}."
+exit 1
+fi
+fi
+
+#check number number shoud be a directory	
+if [[$# -ne 2 ]]; then
+echo "test message"
+exit 1
+if
+# argument is a directory
+if [[ ! -d $1 ]]; then 
+echo "'$1'is a directory"
+if
+
+dir1="$1"
+#get number of files in directory
+count_1=$(ls-A1 "$dir1" | wc -l)
+
+input & output
+
+
